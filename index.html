@@ -8,153 +8,125 @@
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <style type="text/css">
+        BODY {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
 
 </head>
 <body>
-<header class="w-lg border-b-2" style="height:64px;padding-top:5px;">
+<header class="w-lg pt-2" style="height:67px;">
     <div class="flex items-center justify-between px-8 mx-auto max-w-xl">
         <div>
             <img style="height:50px; float:left; margin-right:4px;" src="leo-logo3.svg">
-            <span class="font-semibold" style="font-size:3.4rem;display:inline-block;line-height:1">Leo</span>
+            <span class="font-semibold" style="font-size:3.4rem;display:inline-block;line-height:.9">Leo</span>
         </div>
         <div class="flex items-center">
-            <a class="text-lg leading-normal text-blue hover:text-blue-dark no-underline ml-8" href="#">Download</a>
-            <a class="text-lg leading-normal text-blue hover:text-blue-dark no-underline ml-8" href="#">Docs</a>
-            <a class="text-lg leading-normal text-blue hover:text-blue-dark no-underline ml-8" href="#">LeoVue</a>
+            <a class="text-lg leading-normal text-black hover:text-blue-dark no-underline ml-8" href="#">Download</a>
+            <a class="text-lg leading-normal text-black hover:text-blue-dark no-underline ml-8" href="#">Docs</a>
+            <a class="text-lg leading-normal text-black hover:text-blue-dark no-underline ml-8" href="#">LeoVue</a>
         </div>
     </div>
 </header>
-<section class="bg-blue-lightest h-full py-8">
+<section class="bg-teal text-white h-full py-8">
     <div class="h-12"></div>
     <div class="w-5/6 max-w-lg ml-auto mr-auto h-full">
         <div class="flex items-center justify-center text-center h-full">
             <div>
-                <h1 class="text-4xl sm:text-5xl font-semibold leading-none  mb-4">
+                <h1 class="text-4xl sm:text-5xl font-bold leading-none  mb-4">
                     Connect and Organize
                 </h1>
-                <h2 class="text-2xl sm:text-3xl text-blue-darker opacity-75 font-normal leading-tight mb-8">
+                <h2 class="text-2xl sm:text-3xl font-normal leading-tight mb-8">
                     With Outlines, Clone Nodes and File Pointers.
                 </h2>
             </div>
         </div>
     </div>
 </section>
-<section class="bg-white py-8">
+<section class="bg-white mt-16">
     <div class="w-7/8 max-w-xl ml-auto mr-auto mt-8">
         <div class="flex flex-wrap -mx-6 -my-6">
-            <div class="w-full sm:w-1/2 ">
-                <div class="mb-8"><img src="https://kaleguy.github.io/leo-tutorials/leo1.png"></div>
+            <div class="w-full sm:w-1/2">
+                <div><img src="img/leo-outline.png"></div>
             </div>
-            <div class="w-full sm:w-1/2 pt-24">
+            <div class="w-full sm:w-2/5 pt-24 pl-8">
                 <h3 class="text-3xl sm:text-4xl font-semibold  leading-none mb-3">
-                    Leo is an Outlining Editor.</h3>
-                <p class="text-lg sm:text-xl leading-normal text-grey-darker mb-8">
+                    Leo is an <br>Outlining Editor.</h3>
+                <p class="text-xl sm:text-base leading-normal text-grey-darker mb-8">
                     Create an outline in the top pane. <br>Enter node content in the bottom pane.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="bg-grey-lightest mt-8 p-8">
+    <div class="w-7/8 max-w-xl ml-auto mr-auto mt-8 mb-8">
+        <div class="flex flex-wrap -mx-6 -my-6">
+            <div class="w-full sm:w-2/5 py-4 text-right pt-24 pr-8">
+                <h3 class="text-3xl sm:text-4xl font-semibold  leading-none mb-3">
+                    Leo has <br>Clone Nodes.
+                </h3>
+                <p class="text-lg sm:text-base leading-normal text-grey-darker mb-8">
+                    A single node can appear at multiple places.
+                </p>
+
+            </div>
+            <div class="w-full sm:w-1/2 ">
+                <div><img src="img/leo-clone.png"></div>
             </div>
         </div>
     </div>
 </section>
-<section class="bg-blue-lightest py-8">
-    <div class="w-7/8 max-w-xl ml-auto mr-auto mt-8 mb-8">
+<section class="bg-white mt-16 pb-8">
+    <div class="w-7/8 max-w-xl ml-auto mr-auto mt-8">
         <div class="flex flex-wrap -mx-6 -my-6">
-            <div class="w-full sm:w-1/2 py-4 text-right pt-24">
+            <div class="w-full text-center">
                 <h3 class="text-3xl sm:text-4xl font-semibold  leading-none mb-3">
-                    Leo has Clone Nodes.
-                </h3>
-                <p class="text-lg sm:text-xl leading-normal text-grey-darker mb-8">
-                    A single node can appear at multiple places.
-                </p>
+                    Outline External Content.</h3>
+                <p class="text-lg sm:text-base leading-normal text-grey-darker mb-8 text-center max-w-md m-auto">
+                    Point a Leo node to an external file, and outline that file in Leo.
+                    Code in your IDE, outline and organize in Leo. Leo keeps outline and
+                    external file in sync.
             </div>
-            <div class="w-full sm:w-1/2 ">
-                <div class="mb-8"><img src="https://kaleguy.github.io/leo-tutorials/leo2.png"></div>
+            <div class="w-full  ">
+                <div><img src="img/leo-pointer.png"></div>
             </div>
+        </div>
+    </div>
+</section>
+<section class="bg-grey-lightest mt-16 p-8 pb-16">
+    <div class="w-7/8 max-w-xl ml-auto mr-auto mt-8">
+        <div class="flex flex-wrap -mx-6 -my-6">
+            <div class="w-full text-center">
+                <h3 class="text-3xl sm:text-4xl font-semibold  leading-none mb-3">
+                    Put Your Organized Content Online.</h3>
+                <p class="text-lg sm:text-base leading-normal text-grey-darker mb-8 text-center max-w-md m-auto">
+                    Use LeoVue to put your outlined content online. <br>Add data, metadata and Vue Components.
+            </div>
+            <div class="w-full  ">
+                <div><img src="https://kaleguy.github.io/leovue/static/images/leovue1.png"></div>
+            </div>
+            <div class="w-full  ">
+                <div><img src="https://kaleguy.github.io/leovue/static/images/leovue4.png"></div>
+            </div>
+            <div class="w-full  ">
+                <div><img src="https://kaleguy.github.io/leovue/static/images/leovue5.png"></div>
+            </div>
+            <div class="w-full  ">
+                <div><img src="https://kaleguy.github.io/leovue/static/images/leovue2.png"></div>
+            </div>
+            <div class="w-full  ">
+                <div><img src="https://kaleguy.github.io/leovue/static/images/leovue1.1.png"></div>
+            </div>
+
         </div>
     </div>
 </section>
 
-<section class="bg-grey-lightest py-8">
-    <div class="w-5/6 max-w-2xl ml-auto mr-auto mt-8 mb-8">
-        <div class="flex flex-wrap -mx-6 -my-6">
-            <div class="w-full sm:w-1/2 lg:w-1/4 px-6 py-6">
-                <div class="mb-8">
-                    <svg class="align-middle text-teal" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
-                         stroke-linejoin="round">
-                        <polyline points="21 8 21 21 3 21 3 8"/>
-                        <rect x="1" y="3" width="22" height="5"/>
-                        <line x1="10" y1="12" x2="14" y2="12"/>
-                    </svg>
-                </div>
-                <h3 class="text-3xl font-semibold  leading-none mb-3">This is a small heading</h3>
-                <p class="text-lg leading-normal text-grey-dark mb-8">If you don't plan to use the shadow utilities in
-                    your project, you can disable them entirely by setting the option.</p>
-                <a class="text-lg leading-normal text-blue hover:text-blue-dark no-underline" href="#">Link to
-                    something</a>
-            </div>
-            <div class="w-full sm:w-1/2 lg:w-1/4 px-6 py-6">
-                <div class="mb-8">
-                    <svg class="align-middle text-pink" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
-                         stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"/>
-                        <line x1="14.31" y1="8" x2="20.05" y2="17.94"/>
-                        <line x1="9.69" y1="8" x2="21.17" y2="8"/>
-                        <line x1="7.38" y1="12" x2="13.12" y2="2.06"/>
-                        <line x1="9.69" y1="16" x2="3.95" y2="6.06"/>
-                        <line x1="14.31" y1="16" x2="2.83" y2="16"/>
-                        <line x1="16.62" y1="12" x2="10.88" y2="21.94"/>
-                    </svg>
-                </div>
-                <h3 class="text-3xl font-semibold  leading-none mb-3">This is a small heading</h3>
-                <p class="text-lg leading-normal text-grey-dark mb-8">If you don't plan to use the shadow utilities in
-                    your project, you can disable them entirely by setting the option.</p>
-                <a class="text-lg leading-normal text-blue hover:text-blue-dark no-underline" href="#">Link to
-                    something</a>
-            </div>
-            <div class="w-full sm:w-1/2 lg:w-1/4 px-6 py-6">
-                <div class="mb-8">
-                    <svg class="align-middle text-purple" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
-                         stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"/>
-                        <line x1="14.31" y1="8" x2="20.05" y2="17.94"/>
-                        <line x1="9.69" y1="8" x2="21.17" y2="8"/>
-                        <line x1="7.38" y1="12" x2="13.12" y2="2.06"/>
-                        <line x1="9.69" y1="16" x2="3.95" y2="6.06"/>
-                        <line x1="14.31" y1="16" x2="2.83" y2="16"/>
-                        <line x1="16.62" y1="12" x2="10.88" y2="21.94"/>
-                    </svg>
-                </div>
-                <h3 class="text-3xl font-semibold  leading-none mb-3">This is a small heading</h3>
-                <p class="text-lg leading-normal text-grey-dark mb-8">If you don't plan to use the shadow utilities in
-                    your project, you can disable them entirely by setting the option.</p>
-                <a class="text-lg leading-normal text-blue hover:text-blue-dark no-underline" href="#">Link to
-                    something</a>
-            </div>
-            <div class="w-full sm:w-1/2 lg:w-1/4 px-6 py-6">
-                <div class="mb-8">
-                    <svg class="align-middle text-orange" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
-                         stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"/>
-                        <line x1="14.31" y1="8" x2="20.05" y2="17.94"/>
-                        <line x1="9.69" y1="8" x2="21.17" y2="8"/>
-                        <line x1="7.38" y1="12" x2="13.12" y2="2.06"/>
-                        <line x1="9.69" y1="16" x2="3.95" y2="6.06"/>
-                        <line x1="14.31" y1="16" x2="2.83" y2="16"/>
-                        <line x1="16.62" y1="12" x2="10.88" y2="21.94"/>
-                    </svg>
-                </div>
-                <h3 class="text-3xl font-semibold  leading-none mb-3">This is a small heading</h3>
-                <p class="text-lg leading-normal text-grey-dark mb-8">If you don't plan to use the shadow utilities in
-                    your project, you can disable them entirely by setting the option.</p>
-                <a class="text-lg leading-normal text-blue hover:text-blue-dark no-underline" href="#">Link to
-                    something</a>
-            </div>
-        </div>
-    </div>
-</section>
+
+
 </body>
 </html>
