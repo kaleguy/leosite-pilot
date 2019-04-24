@@ -3,25 +3,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-
     <title>Leo</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
-
+    <meta name="description" content="Leo">
+    <meta name="author" content="Leo">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
     <style type="text/css">
         BODY {
             font-family: 'Montserrat', sans-serif;
-        }
-         .btn {
-             @apply font-bold py-2 px-4 rounded;
-         }
-        .btn-blue {
-            @apply bg-blue text-white;
-        }
-        .btn-blue:hover {
-            @apply bg-blue-dark;
         }
         figcaption {
             text-align: center;
@@ -30,6 +19,22 @@
             color: #666;
             margin-top: -8px;
             margin-bottom: 8px;
+        }
+
+    pre {
+            font-family: "Courier 10 Pitch", Courier, monospace;
+            font-size: 95%;
+            line-height: 140%;
+            white-space: pre;
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -o-pre-wrap;
+            background: black;
+            color: #fff;
+        
+        }       
+        ol li {
+          padding: 10px;
         }
     </style>
 
@@ -42,12 +47,13 @@
             <span class="font-semibold" style="font-size:3.4rem;display:inline-block;line-height:.9">Leo</span>
         </div>
         <div class="flex items-center">
-            <a class="text-lg leading-normal text-black hover:text-blue-dark no-underline ml-8" href="#">Download</a>
+            <a class="text-lg leading-normal text-black hover:text-blue-dark no-underline ml-8" href="download.html">Download</a>
             <a class="text-lg leading-normal text-black hover:text-blue-dark no-underline ml-8" href="#">Docs</a>
             <a class="text-lg leading-normal text-black hover:text-blue-dark no-underline ml-8" href="#">LeoVue</a>
         </div>
     </div>
 </header>
+
 <section class="bg-teal text-white h-full py-8">
     <div class="h-12"></div>
     <div class="w-5/6 max-w-lg ml-auto mr-auto h-full">
@@ -169,6 +175,6 @@
 </footer>
 
 
-
 </body>
 </html>
+
